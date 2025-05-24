@@ -1,14 +1,27 @@
-.raleway-title {
+:root {
+    --font: "Raleway", sans-serif;
+
+    --bg-color: #EDC2D3;
+    --primary-color: #E4A2BC;
+    --primary-color-hover: #E4A2BC99;
+    --primary-color-alpha: #E4A2BC80;
+    --primary-color-cc: #E4A2BCCC;
+
+    --border-color: #96375C;
+    --border-color-alpha: #96375C80;
+    --heading-color: #96375CCC;
+
+    --text-color: white;
+}
+
+* {
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600; /* [100 and 900] */
-    font-style: normal;
 }
 
 body {
-    background-color: #ABD1C9CC;
+    background-color: var(--bg-color);
     margin: 0;
-    height: 100vh;
+    padding: 10vh;
     display: flex;
     justify-content: center; /* horizontal */
     align-items: center;     /* vertical */
@@ -17,44 +30,63 @@ body {
 }
 
 h1 {
-    color: #4C9081CC;
-    font-family: "Raleway", sans-serif;
+    color: var(--heading-color);
     font-weight: 600;
 }
+
 h2 {
-    font-family: "Raleway", sans-serif;
     font-weight: 200;
 }
-.display{
-    background-color: #78AFA3CC;
-    border: 1.5px solid #4C9081;
+
+.display {
+    background-color: var(--primary-color-cc);
+    border: 1.5px solid var(--border-color);
     border-radius: 10px;
-    color: #D7EBE7;
+    color: var(--text-color);
     display: flex;
     justify-content: center;
-    background-size: auto;
-    width: 300px;
+    width: 80%;
+    max-width: 300px;
+    transition: transform 0.2s, background-color 0.2s;
 }
-.display:hover{
-    background-color: #78AFA3;
+
+.display:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.01);
 }
-button{
-    background-color: #78AFA380;
-    border: 1.5px solid #4C908180;
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+button {
+    background-color: var(--primary-color-alpha);
+    border: 1.5px solid var(--border-color-alpha);
     border-radius: 20px;
-    font-family: "Raleway", sans-serif;
-    color: #D7EBE7;
+    color: var(--text-color);
+    font-size: 1rem;
+    outline: none;
     width: 75px;
     height: 30px;
-    margin: 10px;
     cursor: pointer;
+    transition: transform 0.1s, background-color 0.1s;
 }
-button:hover{
-    background-color: #78AFA399;
+
+button:hover {
+    background-color: var(--primary-color-hover);
     transform: scale(1.05);
-    transition: 0.1s;
 }
-.buttons{
-    display: flex;
-    justify-content: center;
+
+@media (max-width: 400px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    button {
+        width: 100px;
+    }
 }
