@@ -1,3 +1,9 @@
+# macOS system files
+.DS_Store
+
+# JetBrains IDEs (WebStorm, IntelliJ)
+.idea/
+
 # Logs
 logs
 *.log
