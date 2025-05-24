@@ -2,7 +2,7 @@
 .DS_Store
 
 # JetBrains IDEs (WebStorm, IntelliJ)
-.idea/
+*.idea
 
 # Logs
 logs
