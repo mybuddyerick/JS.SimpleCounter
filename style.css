@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ABD1C9;
+    background-color: #ABD1C9CC;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -40,7 +40,7 @@ h2 {
 }
 button{
     background-color: #78AFA380;
-    border: 1.5px solid #4C9081;
+    border: 1.5px solid #4C908180;
     border-radius: 20px;
     font-family: "Raleway", sans-serif;
     color: #D7EBE7;
@@ -50,7 +50,9 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color: #78AFA3;
+    background-color: #78AFA399;
+    transform: scale(1.05);
+    transition: 0.1s;
 }
 .buttons{
     display: flex;
