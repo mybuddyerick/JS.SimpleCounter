@@ -18,6 +18,12 @@
     font-family: "Raleway", sans-serif;
 }
 
+.unselectable {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 body {
     background-color: var(--bg-color);
     margin: 0;
@@ -90,6 +96,7 @@ button:hover {
     transform: scale(1.05);
 }
 
+/*TODO
 @media (max-width: 400px) {
     .buttons {
         flex-direction: column;
@@ -99,3 +106,4 @@ button:hover {
         width: 100px;
     }
 }
+*/
