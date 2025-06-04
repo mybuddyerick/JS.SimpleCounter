@@ -36,7 +36,7 @@ body {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 5em;
     color: var(--heading-color);
     font-weight: 600;
 }
@@ -110,15 +110,15 @@ button:hover {
 
 .settings_space{
     position: relative;
-    height: 28vh;
+    height: 15vh;
     width: 100%;
 }
 
 .gear-icon {
     position: absolute;
     bottom: 0;
-    right: 0;
-    height: 8vh;
-    width: 8vh;
+    right: 3.8vh;
+    height: 6vh;
+    width: 6vh;
     fill: var(--heading-color);
 }
