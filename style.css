@@ -36,16 +36,16 @@ body {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 4em;
     color: var(--heading-color);
     font-weight: 600;
 }
 h2 {
-    font-size: 8vw;
+    font-size: 6em;
     font-weight: 200;
 }
 h3 {
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 200;
 }
 
@@ -83,10 +83,10 @@ button {
     border: 1.5px solid var(--border-color-alpha);
     border-radius: 20px;
     color: var(--text-color);
-    font-size: 2vw;
+    font-size: 3vw;
     outline: none;
-    width: 8vw;
-    height: 4vw;
+    width: 15vw;
+    height: 8vw;
     cursor: pointer;
     transition: transform 0.1s, background-color 0.1s;
 }
@@ -107,3 +107,18 @@ button:hover {
     }
 }
 */
+
+.settings_space{
+    position: relative;
+    height: 28vh;
+    width: 100%;
+}
+
+.gear-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 8vh;
+    width: 8vh;
+    fill: var(--heading-color);
+}
