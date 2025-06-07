@@ -36,9 +36,14 @@ body {
 }
 
 h1 {
-    font-size: 4.5em;
+    font-size: clamp(4em, 10vw, 5rem);
     color: var(--heading-color);
     font-weight: 600;
+    margin: 2vh auto;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 h2 {
     font-size: 6em;
@@ -96,18 +101,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/*TODO
-@media (max-width: 400px) {
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    button {
-        width: 100px;
-    }
-}
-*/
-
 /* == GEAR ICON == */
 .cog_space{
     position: relative;
@@ -117,9 +110,33 @@ button:hover {
 
 .cog-icon {
     position: absolute;
-    fill: var(--heading-color);
     bottom: 0;
     right: 3.8vh;
-    height: 7vh;
-    width: 7vh;
+    height: 5vh;
+    width: 5vh;
+    transition: transform 0.3s ease-in-out;
+}
+.cog-icon:hover {
+    transform: scale(1.01) rotate(180deg);
+}
+
+/* == mobile stuff == */
+
+@media (max-width: 600px) {
+
+    h1 {
+        margin: 3vh auto;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    button {
+        width: 60vw;
+        height: 12vw;
+        font-size: 6vw;
+    }
 }

@@ -7,7 +7,14 @@ This is a simple counter web application created as part of my personal practice
 - Responsive UI styling using CSS
 - Semantic HTML structure
 
-There are three features:
+### There are three features:
 - Add (+1) to the counter
 - Subtract (-1) from the counter
 - Clear the counter (reset to 0)
+
+### Roadmap:
+- Add cache to remember last number
+- Make functional settings menu
+- Themes with wheel selector
+
+<img src="/icons/CounterApp.png" alt="App Screenshot" width="400px">
